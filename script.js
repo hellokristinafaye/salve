@@ -13,17 +13,56 @@ computerScoreText.innerHTML = computerScore
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
     computerChoice = hand[choice];
-    console.log(`Computer: ${computerChoice}`);
     return computerChoice;
 }
-getComputerChoice()
-console.log(`Computer: ${computerChoice}`);
 
 function getHumanChoice() {
     humanChoice = window.prompt("Enter your weapon: rock, paper or scissors")
-    console.log(`Human: ${humanChoice}`)
     return humanChoice;
 }
-getHumanChoice()
 
-console.log(`Human: ${humanChoice}`)
+// getHumanChoice()
+
+function playRound(humanChoice, computerChoice) {
+    getHumanChoice();
+    getComputerChoice();
+    console.log(`Human: ${humanChoice}`)
+    console.log(`Computer: ${computerChoice}`);
+    // humanChoice = humanChoice.toLowerCase();
+    console.log("um")
+    if (humanChoice !== "rock") {
+       return console.log("lol wut")
+    }
+
+    // if (humanChoice === computerChoice) {
+    //     return console.log("It's a tie!");
+    // } else if (humanChoice === "rock" && computerChoice === "scissors") {
+    //     humanScore++;
+    //     return console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+    // } else if (humanChoice === "rock" && computerChoice === "paper") {
+    //     computerScore++;
+    //     return `You lose! ${computerChoice} beats ${humanChoice}`;
+    // }
+    // else if (humanChoice === "paper" && computerChoice === "scissors") {
+    //     computerScore++;
+    //     return `You lose! ${computerChoice} beats ${humanChoice}`;
+    // }
+    // else if (humanChoice === "paper" && computerChoice === "rock") {
+    //     humanScore++;
+    //     return `You win! ${humanChoice} beats ${computerChoice}`;
+    // }
+    // else if (humanChoice === "scissors" && computerChoice === "paper") {
+    //     humanScore++;
+    //     return `You win! ${humanChoice} beats ${computerChoice}`;
+    // }
+    // else if (humanChoice === "paper" && computerChoice === "rock") {
+    //     humanScore++;
+    //     return `You win! ${humanChoice} beats ${computerChoice}`;
+    // }
+    // else if (humanChoice === "paper" && computerChoice === "scissors") {
+    //     computerScore++;
+    //     return `You lose! ${computerChoice} beats ${humanChoice}`;
+    // }
+};
+
+playRound();
