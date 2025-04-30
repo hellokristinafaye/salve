@@ -17,3 +17,10 @@ function getComputerChoice() {
     return computerChoice;
 }
 getComputerChoice()
+
+function getHumanChoice() {
+    humanChoice = window.prompt("Enter your weapon: rock, paper or scissors")
+    console.log(`Human: ${humanChoice}`)
+    return humanChoice;
+}
+getHumanChoice()
