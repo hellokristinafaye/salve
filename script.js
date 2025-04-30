@@ -17,6 +17,7 @@ function getComputerChoice() {
     return computerChoice;
 }
 getComputerChoice()
+console.log(`Computer: ${computerChoice}`);
 
 function getHumanChoice() {
     humanChoice = window.prompt("Enter your weapon: rock, paper or scissors")
@@ -24,3 +25,5 @@ function getHumanChoice() {
     return humanChoice;
 }
 getHumanChoice()
+
+console.log(`Human: ${humanChoice}`)
