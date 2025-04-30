@@ -20,7 +20,7 @@ function getHumanChoice() {
     humanChoice = window.prompt("Enter your weapon: rock, paper or scissors")
     return humanChoice;
 }
-
+// the problem is that I can't get teh human choice OUT of the getHumanChoice() function???? Like the results never show up in the later function, even tho the variable is declared at a global scope. the result doesn't leave the getHumanChoice function.
 // getHumanChoice()
 
 function playRound(humanChoice, computerChoice) {
