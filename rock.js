@@ -89,6 +89,9 @@ function playGame() {
     } else if (humanScore < computerScore) {
         gameMsgText.innerHTML = "You lose the game!";
         return "You lose the game!"
+    } else {
+        gameMsgText.innerHTML = "All tied up!";
+        return 
     }
 }
 
