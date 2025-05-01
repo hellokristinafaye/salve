@@ -16,3 +16,10 @@ function getHumanChoice() {
     return prompt("Game on! Choose rock, paper or scissors!");
 }
 console.log(`Human: ${humanChoice}`)
+
+function playRound(humanChoice) {
+    let lowerCaseHumanChoice = humanChoice.toLowerCase();
+    console.log(lowerCaseHumanChoice)
+
+}
+playRound(humanChoice);
