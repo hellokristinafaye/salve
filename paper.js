@@ -50,6 +50,12 @@ function playRound(humanChoice) {
         console.log(`Human Score: ${humanScore}`)
         humanScoreText.innerHTML = humanScore
     }
+    else if (lowerCaseHumanChoice === "paper" && computerChoice === "scissors") {
+        console.log("Scissors Wins!")
+        computerScore++
+        console.log(`Computer Score: ${computerScore}`)
+        computerScoreText.innerHTML = computerScore
+    }
 
 
 }
