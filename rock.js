@@ -32,43 +32,49 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         console.log("Draw!")
-        gameMsgText.innerHTML = "Draw!"
+        // gameMsgText.innerHTML = "Draw!"
+        alert("Draw!")
         return "Draw!";
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
         humanScore++;
         humanScoreText.innerHTML = humanScore;
         console.log(`You win! ${humanChoice} beats ${computerChoice}`)
-        gameMsgText.innerHTML = `You win! ${humanChoice} beats ${computerChoice}`
+        alert(`You win! ${humanChoice} beats ${computerChoice}`)
         return `You win! ${humanChoice} beats ${computerChoice}`;
     } else if (humanChoice === "rock" && computerChoice === "paper") {
         computerScore++;
         computerScoreText.innerHTML = computerScore;
+        alert(`You lose! ${computerChoice} beats ${humanChoice}`)
         return `You lose! ${computerChoice} beats ${humanChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "scissors") {
         computerScore++;
         computerScoreText.innerHTML = computerScore;
+        alert(`You lose! ${computerChoice} beats ${humanChoice}`)
         return `You lose! ${computerChoice} beats ${humanChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "rock") {
         humanScore++;
         humanScoreText.innerHTML = humanScore;
+        alert(`You win! ${humanChoice} beats ${computerChoice}`)
         return `You win! ${humanChoice} beats ${computerChoice}`;
     }
     else if (humanChoice === "scissors" && computerChoice === "paper") {
         humanScore++;
         humanScoreText.innerHTML = humanScore;
+        alert(`You win! ${humanChoice} beats ${computerChoice}`)
         return `You win! ${humanChoice} beats ${computerChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "rock") {
         humanScore++;
         humanScoreText.innerHTML = humanScore;
-
+        alert(`You win! ${humanChoice} beats ${computerChoice}`)
         return `You win! ${humanChoice} beats ${computerChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "scissors") {
         computerScore++;
         computerScoreText.innerHTML = computerScore;
+        alert(`You lose! ${computerChoice} beats ${humanChoice}`)
         return `You lose! ${computerChoice} beats ${humanChoice}`;
     }
 };
