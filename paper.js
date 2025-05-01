@@ -1,1 +1,8 @@
-console.log("beats rock")
+const hand = ["rock", "paper", "scissors"];
+
+function getComputerChoice() {
+    let choice = Math.floor(Math.random() * 3);
+    return hand[choice];
+}
+
+console.log(getComputerChoice());
