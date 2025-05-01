@@ -30,11 +30,12 @@ function playRound(humanChoice) {
         drawScoreText.innerHTML = drawScore
 
     }
-    // else if (
-    //     lowerCaseHumanChoice === "rock" &&computerChoice === "paper"
-    // ) {
-
-    // }
+    else if (lowerCaseHumanChoice === "rock" && computerChoice === "paper") {
+        console.log("Paper Wins!")
+        // drawScore++
+        // console.log(drawScore)
+        // drawScoreText.innerHTML = drawScore
+    }
 
 
 }
