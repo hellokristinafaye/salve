@@ -84,8 +84,10 @@ function playGame() {
         playRound(humanChoice, computerChoice);
     }
     if (humanScore > computerScore) {
+        gameMsgText.innerHTML = "You win the game!";
         return "You win the game!"
-    } else {
+    } else if (humanScore < computerScore) {
+        gameMsgText.innerHTML = "You lose the game!";
         return "You lose the game!"
     }
 }
