@@ -3,6 +3,7 @@ let computerChoice = getComputerChoice();
 let humanChoice = getHumanChoice();
 let humanScore = 0;
 let computerScore = 0;
+let drawScore = 0;
 
 
 function getComputerChoice() {
