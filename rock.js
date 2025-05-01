@@ -7,24 +7,27 @@ let computerChoice;
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
-    console.log(hand[choice]);
     computerChoice = hand[choice];
+    console.log(`Computer: ${computerChoice}`);
     return computerChoice;
 }
 
 function getHumanChoice() {
     let humanChoice = window.prompt("Enter your weapon: rock, paper or scissors")
-    console.log(humanChoice)
+    console.log(`Human: ${humanChoice}`);
+
     return humanChoice;
 }
 
 // console.log(humanChoice);
 
 function playRound(humanChoice, computerChoice) {
-    getHumanChoice();
+    humanChoice = getHumanChoice();
+    computerChoice = getComputerChoice();
     // humanChoice = humanChoice.toLowerCase();
 
     if (humanChoice === computerChoice) {
+        console.log("Draw!")
         return "It's a tie!";
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
         humanScore++;
@@ -66,4 +69,4 @@ function playGame() {
     }
 }
 
-// playGame()
+playGame()
