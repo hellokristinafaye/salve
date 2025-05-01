@@ -1,7 +1,6 @@
 const humanScoreText = document.getElementById("human-score");
 const computerScoreText = document.getElementById("computer-score");
 const hand = ['rock', 'paper', 'scissors'];
-let humanChoice;
 let computerChoice;
 
 let humanScore = 0;
@@ -17,9 +16,13 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    humanChoice = window.prompt("Enter your weapon: rock, paper or scissors")
-    return humanChoice;
+    let hey = window.prompt("Enter your weapon: rock, paper or scissors")
+    console.log(hey)
 }
+// let humanChoice = getHumanChoice();
+
+
+
 // the problem is that I can't get teh human choice OUT of the getHumanChoice() function???? Like the results never show up in the later function, even tho the variable is declared at a global scope. the result doesn't leave the getHumanChoice function.
 // getHumanChoice()
 
@@ -29,10 +32,10 @@ function playRound(humanChoice, computerChoice) {
     console.log(`Human: ${humanChoice}`)
     console.log(`Computer: ${computerChoice}`);
     // humanChoice = humanChoice.toLowerCase();
-    console.log("um")
-    if (humanChoice !== "rock") {
-       return console.log("lol wut")
-    }
+    // console.log("um")
+    // if (getHumanChoice !== "rock") {
+    //    return console.log("lol wut")
+    // }
 
     // if (humanChoice === computerChoice) {
     //     return console.log("It's a tie!");
