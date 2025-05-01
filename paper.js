@@ -5,4 +5,6 @@ function getComputerChoice() {
     return hand[choice];
 }
 
-console.log(getComputerChoice());
+let computerChoice = getComputerChoice();
+
+console.log(computerChoice);
