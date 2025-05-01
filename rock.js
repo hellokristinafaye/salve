@@ -34,6 +34,8 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         console.log("Draw!")
+        draw++
+        drawScoreText.innerHTML = draw;
         // gameMsgText.innerHTML = "Draw!"
         alert("Draw!")
         return "Draw!";
