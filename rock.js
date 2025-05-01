@@ -49,14 +49,18 @@ function playRound(humanChoice, computerChoice) {
     }
     else if (humanChoice === "paper" && computerChoice === "rock") {
         humanScore++;
+        humanScoreText.innerHTML = humanScore;
         return `You win! ${humanChoice} beats ${computerChoice}`;
     }
     else if (humanChoice === "scissors" && computerChoice === "paper") {
         humanScore++;
+        humanScoreText.innerHTML = humanScore;
         return `You win! ${humanChoice} beats ${computerChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "rock") {
         humanScore++;
+        humanScoreText.innerHTML = humanScore;
+
         return `You win! ${humanChoice} beats ${computerChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "scissors") {
