@@ -7,6 +7,7 @@ let drawScore = 0;
 
 const drawScoreText = document.getElementById("draw-score");
 const computerScoreText = document.getElementById("computer-score");
+const humanScoreText = document.getElementById("human-score");
 
 
 function getComputerChoice() {
@@ -36,6 +37,12 @@ function playRound(humanChoice) {
         computerScore++
         console.log(`Computer Score: ${computerScore}`)
         computerScoreText.innerHTML = computerScore
+    }
+    else if (lowerCaseHumanChoice === "rock" && computerChoice === "scissors") {
+        console.log("Rock Wins!")
+        humanScore++
+        console.log(`Human Score: ${humanScore}`)
+        humanScoreText.innerHTML = humanScore
     }
 
 
