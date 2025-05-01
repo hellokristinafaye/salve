@@ -5,6 +5,9 @@ let computerScore = 0;
 let humanChoice;
 let computerChoice;
 
+const gameMsgText = document.getElementById("game-msg")
+gameMsgText.innerHTML = "hello";
+
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
     computerChoice = hand[choice];
