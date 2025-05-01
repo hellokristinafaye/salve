@@ -6,7 +6,7 @@ let humanChoice;
 let computerChoice;
 
 const gameMsgText = document.getElementById("game-msg")
-gameMsgText.innerHTML = "hello";
+const humanScoreText = document.getElementById("human-score");
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
@@ -31,10 +31,13 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         console.log("Draw!")
-        return "It's a tie!";
+        gameMsgText.innerHTML = "Draw!"
+        return "Draw!";
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
         humanScore++;
+        humanScoreText.innerHTML = humanScore;
         console.log(`You win! ${humanChoice} beats ${computerChoice}`)
+        gameMsgText.innerHTML = `You win! ${humanChoice} beats ${computerChoice}`
         return `You win! ${humanChoice} beats ${computerChoice}`;
     } else if (humanChoice === "rock" && computerChoice === "paper") {
         computerScore++;
