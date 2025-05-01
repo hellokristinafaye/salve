@@ -7,6 +7,7 @@ let computerChoice;
 
 const gameMsgText = document.getElementById("game-msg")
 const humanScoreText = document.getElementById("human-score");
+const computerScoreText = document.getElementById("computer-score")
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
@@ -41,10 +42,12 @@ function playRound(humanChoice, computerChoice) {
         return `You win! ${humanChoice} beats ${computerChoice}`;
     } else if (humanChoice === "rock" && computerChoice === "paper") {
         computerScore++;
+        computerScoreText.innerHTML = computerScore;
         return `You lose! ${computerChoice} beats ${humanChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "scissors") {
         computerScore++;
+        computerScoreText.innerHTML = computerScore;
         return `You lose! ${computerChoice} beats ${humanChoice}`;
     }
     else if (humanChoice === "paper" && computerChoice === "rock") {
@@ -65,6 +68,7 @@ function playRound(humanChoice, computerChoice) {
     }
     else if (humanChoice === "paper" && computerChoice === "scissors") {
         computerScore++;
+        computerScoreText.innerHTML = computerScore;
         return `You lose! ${computerChoice} beats ${humanChoice}`;
     }
 };
