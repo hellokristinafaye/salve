@@ -65,4 +65,3 @@ function playRound(humanChoice, computerChoice) {
     // }
 };
 
-playRound();
