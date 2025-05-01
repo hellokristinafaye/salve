@@ -2,12 +2,14 @@
 const hand = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
+let draw = 0;
 let humanChoice;
 let computerChoice;
 
 const gameMsgText = document.getElementById("game-msg")
 const humanScoreText = document.getElementById("human-score");
 const computerScoreText = document.getElementById("computer-score")
+const drawScoreText = document.getElementById("draw-score")
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
