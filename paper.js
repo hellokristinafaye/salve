@@ -1,4 +1,4 @@
-const hand = ["rock", "paper", "scissors"];
+const hand = ["","rock", "paper", "scissors"];
 let computerChoice = getComputerChoice();
 let humanChoice = getHumanChoice();
 let humanScore = 0;
@@ -9,7 +9,7 @@ const drawScoreText = document.getElementById("draw-score");
 
 
 function getComputerChoice() {
-    let choice = Math.floor(Math.random() * 3);
+    let choice = Math.floor(Math.random() * 4);
     return hand[choice];
 }
 console.log(`Computer: ${computerChoice}`);
@@ -29,11 +29,12 @@ function playRound(humanChoice) {
         console.log(drawScore)
         drawScoreText.innerHTML = drawScore
 
-    } else if (
-        lowerCaseHumanChoice === "rock" &&computerChoice === "paper"
-    ) {
-
     }
+    // else if (
+    //     lowerCaseHumanChoice === "rock" &&computerChoice === "paper"
+    // ) {
+
+    // }
 
 
 }
