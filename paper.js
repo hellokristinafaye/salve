@@ -22,6 +22,7 @@ function getHumanChoice() {
 console.log(`Human: ${humanChoice}`)
 
 function playRound(humanChoice) {
+
     let lowerCaseHumanChoice = humanChoice.toLowerCase();
     console.log(`lowerCaseHumanChoice: ${lowerCaseHumanChoice}`)
 
@@ -71,4 +72,11 @@ function playRound(humanChoice) {
 
 
 }
-playRound(humanChoice);
+
+function playGame() {
+    for (var i = 0; i < 5; i++){
+        playRound();
+        console.log("lol wut?")
+    }
+
+}
