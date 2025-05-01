@@ -7,4 +7,10 @@ function getComputerChoice() {
 
 let computerChoice = getComputerChoice();
 
-console.log(computerChoice);
+console.log(`Computer: ${computerChoice}`);
+
+function getHumanChoice() {
+    return prompt("Game on! Choose rock, paper or scissors!");
+}
+let humanChoice = getHumanChoice();
+console.log(`Human: ${humanChoice}`)
