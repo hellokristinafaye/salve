@@ -1,14 +1,14 @@
 const hand = ["rock", "paper", "scissors"];
 let computerChoice = getComputerChoice();
 let humanChoice = getHumanChoice();
+let humanScore = 0;
+let computerScore = 0;
 
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
     return hand[choice];
 }
-
-
 console.log(`Computer: ${computerChoice}`);
 
 function getHumanChoice() {
