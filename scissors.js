@@ -17,13 +17,17 @@ function getHumanChoice() {
 
 let humanChoice;
 
-let computerChoice = getComputerChoice()
+let computerChoice;
 
-console.log(`comp says: ${computerChoice}`)
+// console.log(`comp says: ${computerChoice}`)
 
 function playRound(humanChoice, computerChoice) {
     humanChoice = getHumanChoice();
-    console.log(`player says: ${humanChoice}`)
+    console.log(`player says: ${humanChoice}`);
+
+    computerChoice = getComputerChoice();
+
+    console.log(`comp says: ${computerChoice}`);
     // humanChoice.toLowerCase();
     if (humanChoice === computerChoice) {
         console.log("it's a tie!");
@@ -71,6 +75,7 @@ function playGame() {
     // }
     
     
+    playRound(humanChoice, computerChoice);
     playRound(humanChoice, computerChoice);
     playRound(humanChoice, computerChoice);
     console.log("Game Over, play again?")
