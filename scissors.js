@@ -22,7 +22,7 @@ let computerChoice;
 // console.log(`comp says: ${computerChoice}`)
 
 function playRound(humanChoice, computerChoice) {
-    humanChoice = getHumanChoice();
+    humanChoice = getHumanChoice().toLowerCase();
     console.log(`player says: ${humanChoice}`);
 
     computerChoice = getComputerChoice();
