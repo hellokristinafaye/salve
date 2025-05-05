@@ -7,11 +7,14 @@ function getComputerChoice() {
     let num = Math.round(Math.random() * 2)
 
     if (num === 0) {
-        return console.log("rock");
+        console.log("rock");
+        return "rock";
     } else if (num === 1) {
-        return console.log("paper");
+        console.log("paper");
+        return "paper";
     } else if (num === 2) {
-       return console.log("scissors");
+        console.log("scissors");
+        return "scissors";
     }
 }
 
@@ -22,4 +25,9 @@ function getHumanChoice() {
 let humanChoice = getHumanChoice()
 console.log(`player says: ${humanChoice}`)
 
-getComputerChoice()
+let computerChoice = getComputerChoice()
+
+console.log(`comp says: ${computerChoice}`)
+// function playRound() {
+
+// }
