@@ -31,6 +31,7 @@ function playRound(humanChoice, computerChoice) {
     // humanChoice.toLowerCase();
     if (humanChoice === computerChoice) {
         console.log("it's a tie!");
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`);
     }
     else if (humanChoice === "rock" && computerChoice === "paper") {
         console.log("Paper beats Rock, Computer wins!")
