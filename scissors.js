@@ -28,6 +28,9 @@ console.log(`player says: ${humanChoice}`)
 let computerChoice = getComputerChoice()
 
 console.log(`comp says: ${computerChoice}`)
-// function playRound() {
 
-// }
+function playRound(humanChoice, computerChoice) {
+    // humanChoice.toLowerCase();
+    console.log(humanChoice, computerChoice);
+}
+playRound(humanChoice, computerChoice);
