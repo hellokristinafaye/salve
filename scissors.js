@@ -1,5 +1,8 @@
 console.log("snip snip")
 
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let num = Math.round(Math.random() * 2)
 
