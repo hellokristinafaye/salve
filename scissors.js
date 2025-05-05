@@ -31,6 +31,38 @@ console.log(`comp says: ${computerChoice}`)
 
 function playRound(humanChoice, computerChoice) {
     // humanChoice.toLowerCase();
-    console.log(humanChoice, computerChoice);
+    if (humanChoice === computerChoice) {
+        console.log("it's a tie!");
+    }
+    else if (humanChoice === "rock" && computerChoice === "paper") {
+        console.log("Paper beats Rock, Computer wins!")
+        computerScore++
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`)
+    }
+    else if (humanChoice === "rock" && computerChoice === "scissors") {
+        console.log("Rock beats Scissors, Human wins!")
+        humanScore++
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`)
+    }
+    else if (humanChoice === "paper" && computerChoice === "rock") {
+        console.log("Paper beats Rock, Human wins!")
+        humanScore++
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`)
+    }
+    else if (humanChoice === "paper" && computerChoice === "scissors") {
+        console.log("Scissors beats Paper, Computer wins!")
+        computerScore++
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`)
+    }
+    else if (humanChoice === "scissors" && computerChoice === "rock") {
+        console.log("Rock beats Scissors, Computer wins!")
+        computerScore++
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`)
+    }
+    else if (humanChoice === "scissors" && computerChoice === "paper") {
+        console.log("Scissors beats Paper, Human wins!")
+        humanScore++
+        console.log(`Computer: ${computerScore}\n Human: ${humanScore}`)
+    }
 }
 playRound(humanChoice, computerChoice);
