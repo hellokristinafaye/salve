@@ -12,4 +12,11 @@ function getComputerChoice() {
     }
 }
 
+function getHumanChoice() {
+    return prompt("To play, enter rock, paper, or scissors")
+}
+
+let humanChoice = getHumanChoice()
+console.log(`player says: ${humanChoice}`)
+
 getComputerChoice()
